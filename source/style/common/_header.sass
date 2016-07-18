@@ -1,0 +1,169 @@
+.header__cover
+	background: url(/assets/img/bg_main.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	font-size: 16px
+	color: #fff
+	
+
+.header__author-panel
+
+/* Photo style */
+.author__photo-container
+
+.author__photo-frame
+	width: 125px
+	height: 125px
+	border-radius: 50%
+	overflow: hidden
+	background-color: #fff
+	position: relative
+	border: 2px solid #fff
+
+.author__photo
+	display: block
+	margin: auto
+	min-width: 100%
+	min-height: 100%
+	text-align: center
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+
+/* Name style */
+.author__name
+	color: #fff
+	// font-family: Panton
+	font-size: 21px
+	font-weight: 700
+	line-height: 21px
+
+/* About style */
+.author__about
+	color: #fff
+	opacity: .8
+	// font-family: ProximaNova
+	font-size: 16px
+	font-weight: 300
+	line-height: 24px
+
+
+
+/* Social style */
+.socials
+.socials__list
+	margin: 0
+	padding: 0
+	display: inline-block
+	list-style: none
+.socials__item
+	display: inline-block
+	padding: 5px
+.socials__link
+	text-decoration: none
+	&:hover > .svg__icon_social
+		fill: #fff
+.svg__icon_social
+	fill: #d2d7d5
+	width: 20px
+	height: 20px
+.social-span
+	position: absolute
+	left: -9999px
+
+
+ 
+/* Search  style */
+.header__search-panel
+	background-color: rgba(#f1f1f1, .8)
+	padding: 10px 0
+	padding-right: 60px
+.form__search
+	width: 25%
+	// margin-right: 60px
+.label__search
+	background-color: #fff
+	border-radius: 20px 0px 0px 20px
+.svg__icon_search
+	max-width: 14px
+	max-height: 14px
+	padding-right: 5px
+	fill: #323232
+	opacity: .6
+	transition: $hover
+.search__form
+	width: 100%
+	height: 40px
+	box-sizing: border-box
+	border: none
+	padding: 10px 0
+	padding-right: 10px
+	border-radius: 0 20px 20px 0px
+	color: #323232
+	// font-family: ProximaNova
+	font-size: 16px
+	font-weight: 300
+	appearance: none
+	&:focus
+		outline: none
+	&:focus + .label__search > .svg__icon_search
+		fill: $icon_color_active
+		opacity: 1
+		transition: $hover
+
+
+
+/* Layout style components*/
+.header__cover
+	height: 300px
+	display: flex
+	flex-flow: column
+	// justify-content: center
+
+.header__author-panel
+	height: 100%
+	display: flex
+	flex-flow: column wrap
+	// justify-content: center
+
+.author__photo-container
+	flex: 1 0 100%
+	// display: flex
+	// flex-flow: row-reverse
+	// justify-content: center
+	// align-items: center
+
+.author__photo-frame
+
+.author__name
+	
+.author__about
+	width: 420px
+
+.socials
+
+.author__controls
+	// flex: 1 1 100%
+	// margin-left: auto
+
+
+.header__search-panel
+	// margin-top: auto
+	// width: 100%
+	display: flex
+	flex-flow: row-reverse
+.form__search
+	// width: 100%
+	display: flex
+	flex-flow: row-reverse
+.label__search
+	height: 40px
+	width: 35px
+	// align-self: center
+	display: flex
+	flex-flow: row-reverse
+	align-items: center
+.search__form
+	// align-self: center
